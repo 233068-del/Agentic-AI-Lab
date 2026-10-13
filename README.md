@@ -1,57 +1,71 @@
 # Agentic AI Lab
 
-A hands-on repository for AI and machine learning experimentation using Jupyter notebooks. This project documents the complete workflow of a lab-based study, starting from data exploration and progressing through model training, evaluation, and final improvements.
+A hands-on collection of AI and machine-learning lab notebooks implemented as Jupyter notebooks. This repository documents step-by-step experiments, analysis, and results across multiple lab assignments (Labs 3–6).
 
-## Overview
-This repository contains the work completed for the AI lab assignments, with each notebook representing a stage of the learning and implementation process. The focus is on understanding the dataset, applying machine learning techniques, evaluating model performance, and refining the approach to achieve better results.
+## Repository snapshot (current)
+The repository contains the following notebooks and files:
 
-## Repository structure
+- `README.md` — This file (project overview and instructions).
+- `agentic-ai-lab-04-task-1.ipynb` — Lab 4 task 1: exercises and experiments for the fourth lab.
+- `agentic-ai-lab-04-task-2.ipynb` — Lab 4 task 2: continuation of Lab 4 exercises.
+- `agentic-ai-lab-04-task-3.ipynb` — Lab 4 task 3: additional exercises and examples.
+- `agentic-ai-lab-04-task-4.ipynb` — Lab 4 task 4: experiments and analysis.
+- `agentic-ai-lab-04-task-5.ipynb` — Lab 4 task 5: final exercises for Lab 4.
+- `lab-3-task-1.ipynb` — Lab 3, task 1: dataset loading and initial baseline.
+- `lab-3-task-2.ipynb` — Lab 3, task 2: preprocessing and training diagnostics.
+- `lab-3-task-3-final.ipynb` — Lab 3 final: consolidated pipeline and final evaluation.
+- `lab-5-activity-1-2.ipynb` — Lab 5 activities 1 & 2: exercises and demonstrations.
+- `lab-05-task-1-final.ipynb` — Lab 5 task 1 final: completed task with analysis and results.
+- `lab-5-task-2.ipynb` — Lab 5 task 2: further experiments and model variants.
+- `lab-6-all-activites.ipynb` — Lab 6: combined activities and walkthroughs for Lab 6.
+- `lab-06-all-tasks.ipynb` — Lab 6 alternative/archival notebook containing all tasks for Lab 6.
 
-- `lab-3-task-1.ipynb` — Initial exploration and setup for the lab task.
-- `lab-3-task-2.ipynb` — Continued model development and performance evaluation.
-- `lab-3-task-3-final.ipynb` — Finalized version of the lab with completed analysis and results.
-- `README.md` — Repository overview and documentation of the project progress.
+If you recently added other files that are not listed above, tell me their filenames and I will add them to this README.
 
-## What has been completed
+## Project overview
+The notebooks walk through a typical machine-learning workflow:
 
-- Data inspection and understanding of the dataset structure
-- Initial model setup and feature analysis
-- Training workflow implementation in Jupyter notebooks
-- Model performance monitoring and evaluation
-- Improvement of results across multiple stages of the lab
-- Finalized notebook for the completed AI lab assignment
+1. Data loading and exploratory data analysis (EDA)
+2. Preprocessing and feature engineering
+3. Model selection and baseline experiments
+4. Training, validation, and hyperparameter tuning
+5. Visualization of results and final evaluation
 
-## Lab 3 summary
-Lab 3 focused on the end-to-end process of working with a dataset and building a model to solve a data-driven task. The workflow included:
+Each notebook contains code cells, explanatory text, and plots that document the experimental process.
 
-1. Loading and examining the dataset
-2. Exploring feature characteristics and dataset structure
-3. Preparing the training pipeline
-4. Training the model and analyzing its learning progress
-5. Evaluating performance and refining the approach
-6. Finalizing the results in the concluding notebook
+## How to run
+1. Clone the repo:
+   git clone https://github.com/233068-del/Agentic-AI-Lab.git
+2. Create and activate a Python virtual environment (recommended):
+   python -m venv .venv
+   source .venv/bin/activate  (on Windows use `.venv\Scripts\activate`)
+3. Install dependencies (create a `requirements.txt` or install commonly used packages):
+   pip install numpy pandas matplotlib seaborn scikit-learn jupyter
+   (Some notebooks may require TensorFlow or PyTorch.)
+4. Start Jupyter and open the notebook you want:
+   jupyter notebook
 
-This lab demonstrates a practical machine-learning workflow, from raw data understanding to model optimization and final evaluation. The notebooks capture the progress and improvements made throughout the exercise.
+Notes:
+- Some notebooks may expect data files in a `data/` folder or specific package versions. Check the top cells of each notebook for exact imports and dataset paths.
 
-## Learning objectives
+## Key results (high-level)
+- Baseline models show learning behavior with measurable validation improvements across iterations.
+- Preprocessing and hyperparameter tuning provided most of the performance gains.
+- Final notebooks summarize results with plots and metric tables.
 
-- Understand how to work with a dataset in a notebook environment
-- Learn how to inspect, clean, and analyze data
-- Build and train a machine learning model
-- Monitor training progress using evaluation metrics
-- Improve model performance through iterative experimentation
-- Present the final findings and workflow clearly in a reproducible format
+## Reproducibility and recommended repo improvements
+To make this project easier to reproduce and share, consider adding:
+- `requirements.txt` or `environment.yml` (exact package pins)
+- `data/` folder or instructions/links to obtain datasets
+- `LICENSE` and `CONTRIBUTING.md` if you plan to collaborate publicly
+- `results/` or `docs/` folder with exported plots and a short written report
+- A small script to run core experiments non-interactively (for CI or batch runs)
 
-## Tools and technologies
+## Next steps you can ask me to do
+- Add the exact list of Python packages to `requirements.txt` (I can create it from the notebooks' imports).
+- Extract and summarize numeric results (best validation scores) from the final notebooks.
+- Produce a simple `run_all.sh` or `Makefile` to reproduce key experiments.
+- Clean up duplicate/archival notebooks (e.g., choose one `lab-6` notebook and archive the other).
 
-- Python
-- Jupyter Notebook
-- Data analysis and visualization libraries
-- Machine learning model training and evaluation workflows
-
-## Project status
-
-The repository contains the completed work for the assigned AI lab tasks, with the final notebook serving as the culmination of the project. It reflects the learning process, experimentation, and final outcomes of the lab activities.
-
-## Final note
-The goal of this project was not only to produce a working model but also to develop a deeper understanding of how AI workflows are built, evaluated, and improved in practice. This repository serves as a record of that process and the final results achieved.
+## Contact
+Prepared by the repository author. For questions or collaboration, open an issue or contact the repository owner on GitHub.
